@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/* Mobile View */
+
+:root{
+    --Red: hsl(0, 100%, 74%);
+    --Green: hsl(154, 59%, 51%);
+    --Blue: hsl(248, 32%, 49%);
+    --Dark-Blue: hsl(249, 10%, 26%) ;
+    --Grayish-Blue: hsl(246, 25%, 77%);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background: url('./images/bg-intro-mobile.png')center no-repeat;
+    background-color:var(--Red);
+    padding: 130px 30px 20px 30px;
+    color: #fff;
+    position: relative;
+}
+
+@media only screen and (max-width:375px){
+    .container{
+        max-width: 375px;
+        width: 100%;
+    }
+}
+@media (orientation:landscape){
+    .container{
+        overflow: auto;
+    }
+
+}
+
+.textBox .title{
+    font-weight: 900;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 25px;
+    position: relative;
+    top: -500px;
+    
+}
+.textBox .subtitle{
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 12px;
+    animation: right 1s linear;
+    position: relative;
+    left: -500px;
+}
+
+.formTitle{
+    background-color: var(--Blue);
+    padding: 10px 55px;
+    border: 0;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+}
+.formTitle span{
+    font-weight: 900;
+}
+.formControl{
+    margin-bottom: 15px;
+    position: relative;
+}
+.formControl input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: 0;
+}
+.formControl input:focus{
+    border: 2px solid #555;
+}
+.formControl input::placeholder{
+    color: var(--Dark-Blue);
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.formControl.error input{
+    border-color: var(--Red);
+}
+.formControl.error input::placeholder{
+    color: var(--Red);
+}
+.formControl small{
+    display: none;
+    font-size: 12px;
+    color: #555;
+}
+.formControl.error small{
+    display: block;
+    color: var(--Red);
+    font-weight: 600;
+    text-align: right;
+}
+.formControl.error .errorImg{
+    background: url('./images/icon-error.svg')center no-repeat;
+    height: 25px;
+    width: 30px;
+    position: absolute;
+    top: 8px;
+    right: 10px;
+}
+
+
+
+.form{
+    background-color: #fff;
+    padding: 20px 20px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 3px rgba(0,0,0,0.4);
+    margin-bottom: 15px;
+}
+#btn{
+    width: 100%;
+    padding: 10px;
+    background-color: var(--Green);
+    border: 0;
+    box-shadow: 0 7px 2px var(--Green);
+    margin-bottom: 10px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    outline: 0;
+    border-radius: 5px;
+}
+.text{
+    color: #ccc;
+    font-size: 12px;
+    text-align: center;
+    padding: 0px 20px;
+}
+.text span{
+    color: var(--Red);
+    font-weight: bold;
+}
+footer{
+    
+    width: 100%;
+    align-self:flex-end;
+    justify-self: flex-end;
+    text-align: center;
+}
+.attribution { 
+    font-size: 12px;
+    text-align: center; 
+    font-weight: 600;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+    font-family: cursive;
+}
