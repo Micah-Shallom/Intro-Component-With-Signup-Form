@@ -1,0 +1,61 @@
+
+@media screen and (min-width:801px){
+    .container{
+        max-width: 1440px;
+        width: 100%;
+        background: url('./images/bg-intro-desktop.png');
+        background-color: hsl(0, 100%, 74%);
+        flex-direction: row;
+        justify-content:center;
+        height: 100vh;
+        overflow: hidden;
+        padding: 50px 0px 30px 0px;
+    }
+    .textBox{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 600px;
+        padding: 0px 40px 0px 50px;
+    }
+    .textBox .title{
+        font-size: 30px;
+        line-height: 50px;
+        justify-self: flex-start;
+        width: 100%;
+        padding: 0px 0px;
+        text-align: left;
+    }
+    .textBox .subtitle{
+        text-align: left;
+    }
+
+    .formBox{
+        width: 500px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    footer{
+        position: absolute;
+        bottom: 0;
+    }
+    .attribution{
+        font-size: 20px;
+    }
+}
+
+ @media only screen and (min-width:376px) and (max-width:800px){
+    .container{
+        max-width: 800px;
+        width: 100%;
+    }
+}; 
+@media (orientation:landscape){
+    .container{
+        overflow: auto;
+    }
+}
