@@ -57,6 +57,6 @@ const checkEmail=(input)=>{
     if(re.test(input.value)){
         showSuccess(input);
     }else{
-        showError(input,`Looks like this is not an email`);
+        showError(input,`Looks like this is not a valid email`);
     }
 }

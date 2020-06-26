@@ -34,7 +34,7 @@ body{
     background: url('./images/bg-intro-mobile.png')center no-repeat;
     background-color:var(--Red);
     padding: 130px 30px 20px 30px;
-    color: #fff;
+    color:white;
     position: relative;
 }
 
